@@ -1,0 +1,42 @@
+@font-face {
+    font-family: 'Monoton';
+    src: url(Monoton-Regular.ttf);
+  }
+  .logo{
+    font-family: 'Monoton', cursive;
+    background: -webkit-linear-gradient(0deg,#ff8A00, #e52e71);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+  }
+
+  @media only screen and (min-width:768px){
+  .glowLogo{
+      padding: 20px 300px 30px 20px;
+  }
+
+  .glowLogo:hover{
+    border-radius: 50px;
+    animation: glow;
+    animation-duration: 0.5s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    /* background: -webkit-linear-gradient(0deg,rgba(255, 136, 0, 0.438), #e52e7157); */
+    filter:blur(10px);
+  }
+  @keyframes glow {
+      0%   {background:-webkit-linear-gradient(0deg,rgba(255, 136, 0, 0.144), #e52e711c);}
+      25%  {background:-webkit-linear-gradient(0deg,rgba(255, 136, 0, 0), #e52e715e);}
+      50%  {background:-webkit-linear-gradient(0deg,rgba(255, 136, 0, 0.274), #e52e7177);}
+      75%  {background:-webkit-linear-gradient(0deg,rgba(255, 136, 0, 0.554), #e52e7193);} 
+      100% {background:-webkit-linear-gradient(0deg,rgba(255, 136, 0, 0.644), #e52e7170);}
+    
+  }
+}
+
+
+.registerButton {
+  background-image: linear-gradient(90deg,#ff8A00, #e52e71);
+}
