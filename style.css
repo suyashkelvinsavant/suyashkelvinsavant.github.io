@@ -1,39 +1,67 @@
 @font-face {
-    font-family: 'Monoton';
-    src: url(Monoton-Regular.ttf);
+  font-family: 'Monoton';
+  src: url(Monoton-Regular.ttf);
+}
+.logo {
+  font-family: 'Monoton', cursive !important;
+  background: -webkit-linear-gradient(0deg, #ff8a00, #e52e71);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+@media only screen and (min-width: 768px) {
+  .glowLogo {
+    padding: 20px 300px 30px 20px;
   }
-  .logo{
-    font-family: 'Monoton', cursive !important;
-    background: -webkit-linear-gradient(0deg,#ff8A00, #e52e71);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-
-  }
-  @media only screen and (min-width:768px){
-  .glowLogo{
-      padding: 20px 300px 30px 20px;
-  }
-  .glowLogo:hover{
+  .glowLogo:hover {
     border-radius: 50px;
     animation: glow;
     animation-duration: 0.5s;
     animation-direction: alternate;
     animation-iteration-count: infinite;
-    filter:blur(10px);
+    filter: blur(10px);
   }
   @keyframes glow {
-      0%   {background:-webkit-linear-gradient(0deg,rgba(255, 136, 0, 0.144), #e52e711c);}
-      25%  {background:-webkit-linear-gradient(0deg,rgba(255, 136, 0, 0), #e52e715e);}
-      50%  {background:-webkit-linear-gradient(0deg,rgba(255, 136, 0, 0.274), #e52e7177);}
-      75%  {background:-webkit-linear-gradient(0deg,rgba(255, 136, 0, 0.554), #e52e7193);} 
-      100% {background:-webkit-linear-gradient(0deg,rgba(255, 136, 0, 0.644), #e52e7170);}
-    
+    0% {
+      background: -webkit-linear-gradient(
+        0deg,
+        rgba(255, 136, 0, 0.144),
+        #e52e711c
+      );
+    }
+    25% {
+      background: -webkit-linear-gradient(
+        0deg,
+        rgba(255, 136, 0, 0),
+        #e52e715e
+      );
+    }
+    50% {
+      background: -webkit-linear-gradient(
+        0deg,
+        rgba(255, 136, 0, 0.274),
+        #e52e7177
+      );
+    }
+    75% {
+      background: -webkit-linear-gradient(
+        0deg,
+        rgba(255, 136, 0, 0.554),
+        #e52e7193
+      );
+    }
+    100% {
+      background: -webkit-linear-gradient(
+        0deg,
+        rgba(255, 136, 0, 0.644),
+        #e52e7170
+      );
+    }
   }
 }
 .registerButton {
-  background-image: linear-gradient(90deg,#ff8A00, #e52e71);
+  background-image: linear-gradient(90deg, #ff8a00, #e52e71);
 }
 
 html::-webkit-scrollbar {
@@ -41,14 +69,24 @@ html::-webkit-scrollbar {
   height: 30px;
 }
 html::-webkit-scrollbar-thumb {
-  background: linear-gradient(155deg,#ff8a00,#e52e71);
+  background: linear-gradient(155deg, #ff8a00, #e52e71);
   border-radius: 30px;
-  box-shadow: inset 2px 2px 2px hsla(0,0%,100%,.25), inset -2px -2px 2px rgba(0,0,0,.25);
+  box-shadow: inset 2px 2px 2px hsla(0, 0%, 100%, 0.25),
+    inset -2px -2px 2px rgba(0, 0, 0, 0.25);
 }
 html::-webkit-scrollbar-track {
-  background: linear-gradient(90deg,#201c29,#201c29 1px,#100e17 0,#100e17);
+  background: linear-gradient(90deg, #201c29, #201c29 1px, #100e17 0, #100e17);
 }
-#backToTop{
-  bottom: 20px; 
+#backToTop {
+  bottom: 20px;
   right: 20px;
+}
+.navIcon{
+  fill: white;
+}
+.navIcon:hover{
+  fill: #a0aec0;
+}
+.navIcon:focus{
+  fill:#e52e71;
 }
