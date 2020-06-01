@@ -1,597 +1,769 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="tailwind.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
-    <title>Gyan Buzz</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/b8eeac175a.js" crossorigin="anonymous"></script>
+  <link href="tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Gyan Buzz</title>
 </head>
+
 <body>
-    <!-- Header -->
-    <header class="text-gray-500 bg-black body-font">
-        <div class="container mx-auto flex flex-wrap flex-col p-1 md:flex-row items-center">
-          <a class="flex items-center md:mb-0">
-            <div class="absolute glowLogo bg-transparent"></div>
-            <span class="text-3xl md:text-5xl logo">Gyan&nbsp;&nbsp;Buzz</span>
+  <div onclick="topFunction()" id="backToTop" class="hidden fixed z-50 border-none items-center outline-none cursor-pointer w-6 rounded-full">
+    <svg viewBox="0 0 438 266" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M235.971 7.524L430.314 201.867C439.687 211.24 439.687 226.436 430.314 235.808L407.647 258.475C398.29 267.832 383.125 267.85 373.746 258.515L219 104.495L64.255 258.516C54.876 267.851 39.711 267.833 30.354 258.476L7.68701 235.809C-1.68599 226.436 -1.68599 211.24 7.68701 201.868L202.03 7.52499C211.402 -1.84801 226.598 -1.848 235.971 7.524Z" fill="url(#paint0_linear)"/>
+      <defs>
+      <linearGradient id="paint0_linear" x1="219.001" y1="0.495117" x2="219.001" y2="265.506" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FF8A00"/>
+      <stop offset="1" stop-color="#E52E71"/>
+      </linearGradient>
+      </defs>
+      </svg>
+      
+  </div>
+
+  <!-- Header -->
+  <header class="text-gray-500 bg-black body-font">
+    <div class="container mx-auto flex flex-wrap flex-col p-1 md:flex-row items-center">
+      <a class="flex items-center md:mb-0">
+        <div class="absolute glowLogo bg-transparent"></div>
+        <span class="text-3xl md:text-5xl logo">Gyan&nbsp;&nbsp;Buzz</span>
+      </a>
+      <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center ">
+        <a class="mr-5 hover:text-white">Home</a>
+        <a class="mr-5 hover:text-white">Gallery</a>
+        <a class="mr-5 hover:text-white">About</a>
+        <a class="mr-5 hover:text-white">Sign In</a>
+      </nav>
+      <div class="registerButton p-1 m-2 rounded-lg md:m-1 sm:m-0 border-none ">
+        <div
+          class=" items-center  bg-gray-900 hover:bg-black border-none rounded-lg  text-white text-sm py-1 px-2 md:py-2 md:px-4 md:text-base">
+          Register!</div>
+
+      </div>
+    </div>
+  </header>
+  <!-- Header End -->
+  <!-- Middle -->
+  <!-- Hero -->
+  <section class="text-gray-700 bg-black body-font">
+    <div class="container px-5 py-24 mx-auto">
+
+      <div class="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4">
+        <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
+          <div class="rounded-lg h-64 overflow-hidden">
+            <img alt="content" class="object-cover object-center h-full w-full" src="https://dummyimage.com/1203x503">
+          </div>
+          <h2 class="text-xl font-medium title-font text-gray-900 mt-5">Shooting Stars</h2>
+          <p class="text-base leading-relaxed mt-2">Swag shoivdigoitch literally meditation subway tile tumblr
+            cold-pressed. Gastropub street art beard dreamcatcher neutra, ethical XOXO lumbersexual.</p>
+          <a class="text-indigo-500 inline-flex items-center mt-3">Read More
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+              <path d="M5 12h14M12 5l7 7-7 7"></path>
+            </svg>
           </a>
-          <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
-            <a class="mr-5 hover:text-white">Home</a>
-            <a class="mr-5 hover:text-white">Gallery</a>
-            <a class="mr-5 hover:text-white">About</a>
-            <a class="mr-5 hover:text-white">Sign In</a>
+        </div>
+        <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
+          <div class="rounded-lg h-64 overflow-hidden">
+            <img alt="content" class="object-cover object-center h-full w-full" src="https://dummyimage.com/1204x504">
+          </div>
+          <h2 class="text-xl font-medium title-font text-gray-900 mt-5">The Catalyzer</h2>
+          <p class="text-base leading-relaxed mt-2">Swag shoivdigoitch literally meditation subway tile tumblr
+            cold-pressed. Gastropub street art beard dreamcatcher neutra, ethical XOXO lumbersexual.</p>
+          <a class="text-indigo-500 inline-flex items-center mt-3">Read More
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+              <path d="M5 12h14M12 5l7 7-7 7"></path>
+            </svg>
+          </a>
+        </div>
+        <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
+          <div class="rounded-lg h-64 overflow-hidden">
+            <img alt="content" class="object-cover object-center h-full w-full" src="https://dummyimage.com/1205x505">
+          </div>
+          <h2 class="text-xl font-medium title-font text-gray-900 mt-5">The 400 Blows</h2>
+          <p class="text-base leading-relaxed mt-2">Swag shoivdigoitch literally meditation subway tile tumblr
+            cold-pressed. Gastropub street art beard dreamcatcher neutra, ethical XOXO lumbersexual.</p>
+          <a class="text-indigo-500 inline-flex items-center mt-3">Read More
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+              <path d="M5 12h14M12 5l7 7-7 7"></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div class="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4">
+        <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
+          <div class="rounded-lg h-64 overflow-hidden">
+            <img alt="content" class="object-cover object-center h-full w-full" src="https://dummyimage.com/1203x503">
+          </div>
+          <h2 class="text-xl font-medium title-font text-gray-900 mt-5">Shooting Stars</h2>
+          <p class="text-base leading-relaxed mt-2">Swag shoivdigoitch literally meditation subway tile tumblr
+            cold-pressed. Gastropub street art beard dreamcatcher neutra, ethical XOXO lumbersexual.</p>
+          <a class="text-indigo-500 inline-flex items-center mt-3">Read More
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+              <path d="M5 12h14M12 5l7 7-7 7"></path>
+            </svg>
+          </a>
+        </div>
+        <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
+          <div class="rounded-lg h-64 overflow-hidden">
+            <img alt="content" class="object-cover object-center h-full w-full" src="https://dummyimage.com/1204x504">
+          </div>
+          <h2 class="text-xl font-medium title-font text-gray-900 mt-5">The Catalyzer</h2>
+          <p class="text-base leading-relaxed mt-2">Swag shoivdigoitch literally meditation subway tile tumblr
+            cold-pressed. Gastropub street art beard dreamcatcher neutra, ethical XOXO lumbersexual.</p>
+          <a class="text-indigo-500 inline-flex items-center mt-3">Read More
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+              <path d="M5 12h14M12 5l7 7-7 7"></path>
+            </svg>
+          </a>
+        </div>
+        <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
+          <div class="rounded-lg h-64 overflow-hidden">
+            <img alt="content" class="object-cover object-center h-full w-full" src="https://dummyimage.com/1205x505">
+          </div>
+          <h2 class="text-xl font-medium title-font text-gray-900 mt-5">The 400 Blows</h2>
+          <p class="text-base leading-relaxed mt-2">Swag shoivdigoitch literally meditation subway tile tumblr
+            cold-pressed. Gastropub street art beard dreamcatcher neutra, ethical XOXO lumbersexual.</p>
+          <a class="text-indigo-500 inline-flex items-center mt-3">Read More
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+              <path d="M5 12h14M12 5l7 7-7 7"></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Hero -->
+  <!-- Lined Blogs -->
+  <section class="text-gray-700 body-font overflow-hidden">
+    <div class="container px-5 py-24 mx-auto">
+      <div class="-my-8">
+        <div class="py-8 flex flex-wrap md:flex-no-wrap">
+          <div class="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
+            <span class="tracking-widest font-medium title-font text-gray-900">CATEGORY</span>
+            <span class="mt-1 text-gray-500 text-sm">12 Jun 2019</span>
+          </div>
+          <div class="md:flex-grow">
+            <h2 class="text-2xl font-medium text-gray-900 title-font mb-2">Bitters hashtag waistcoat fashion axe chia
+              unicorn</h2>
+            <p class="leading-relaxed">Glossier echo park pug, church-key sartorial biodiesel vexillologist pop-up
+              snackwave ramps cornhole. Marfa 3 wolf moon party messenger bag selfies, poke vaporware kombucha
+              lumbersexual pork belly polaroid hoodie portland craft beer.</p>
+            <a class="text-indigo-500 inline-flex items-center mt-4">Read More
+              <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M5 12h14"></path>
+                <path d="M12 5l7 7-7 7"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="py-8 flex border-t-2 border-gray-200 flex-wrap md:flex-no-wrap">
+          <div class="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
+            <span class="tracking-widest font-medium title-font text-gray-900">CATEGORY</span>
+            <span class="mt-1 text-gray-500 text-sm">12 Jun 2019</span>
+          </div>
+          <div class="md:flex-grow">
+            <h2 class="text-2xl font-medium text-gray-900 title-font mb-2">Meditation bushwick direct trade taxidermy
+              shaman</h2>
+            <p class="leading-relaxed">Glossier echo park pug, church-key sartorial biodiesel vexillologist pop-up
+              snackwave ramps cornhole. Marfa 3 wolf moon party messenger bag selfies, poke vaporware kombucha
+              lumbersexual pork belly polaroid hoodie portland craft beer.</p>
+            <a class="text-indigo-500 inline-flex items-center mt-4">Read More
+              <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M5 12h14"></path>
+                <path d="M12 5l7 7-7 7"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="py-8 flex border-t-2 border-gray-200 flex-wrap md:flex-no-wrap">
+          <div class="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
+            <span class="tracking-widest font-medium title-font text-gray-900">CATEGORY</span>
+            <span class="mt-1 text-gray-500 text-sm">12 Jun 2019</span>
+          </div>
+          <div class="md:flex-grow">
+            <h2 class="text-2xl font-medium text-gray-900 title-font mb-2">Woke master cleanse drinking vinegar salvia
+            </h2>
+            <p class="leading-relaxed">Glossier echo park pug, church-key sartorial biodiesel vexillologist pop-up
+              snackwave ramps cornhole. Marfa 3 wolf moon party messenger bag selfies, poke vaporware kombucha
+              lumbersexual pork belly polaroid hoodie portland craft beer.</p>
+            <a class="text-indigo-500 inline-flex items-center mt-4">Read More
+              <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M5 12h14"></path>
+                <path d="M12 5l7 7-7 7"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Lined Blogs End-->
+  <!-- 3 blog -->
+  <section class="text-gray-700 body-font">
+    <div class="container px-5 py-24 mx-auto">
+      <div class="flex flex-col">
+        <div class="h-1 bg-gray-200 rounded overflow-hidden">
+          <div class="w-24 h-full bg-indigo-500"></div>
+        </div>
+        <div class="flex flex-wrap sm:flex-row flex-col py-6 mb-12">
+          <h1 class="sm:w-2/5 text-gray-900 font-medium title-font text-2xl mb-2 sm:mb-0">Space The Final Frontier</h1>
+          <p class="sm:w-3/5 leading-relaxed text-base sm:pl-10 pl-0">Street art subway tile salvia four dollar toast
+            bitters selfies quinoa yuccie synth meditation iPhone intelligentsia prism tofu. Viral gochujang bitters
+            dreamcatcher.</p>
+        </div>
+      </div>
+      <div class="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4">
+        <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
+          <div class="rounded-lg h-64 overflow-hidden">
+            <img alt="content" class="object-cover object-center h-full w-full" src="https://dummyimage.com/1203x503">
+          </div>
+          <h2 class="text-xl font-medium title-font text-gray-900 mt-5">Shooting Stars</h2>
+          <p class="text-base leading-relaxed mt-2">Swag shoivdigoitch literally meditation subway tile tumblr
+            cold-pressed. Gastropub street art beard dreamcatcher neutra, ethical XOXO lumbersexual.</p>
+          <a class="text-indigo-500 inline-flex items-center mt-3">Read More
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+              <path d="M5 12h14M12 5l7 7-7 7"></path>
+            </svg>
+          </a>
+        </div>
+        <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
+          <div class="rounded-lg h-64 overflow-hidden">
+            <img alt="content" class="object-cover object-center h-full w-full" src="https://dummyimage.com/1204x504">
+          </div>
+          <h2 class="text-xl font-medium title-font text-gray-900 mt-5">The Catalyzer</h2>
+          <p class="text-base leading-relaxed mt-2">Swag shoivdigoitch literally meditation subway tile tumblr
+            cold-pressed. Gastropub street art beard dreamcatcher neutra, ethical XOXO lumbersexual.</p>
+          <a class="text-indigo-500 inline-flex items-center mt-3">Read More
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+              <path d="M5 12h14M12 5l7 7-7 7"></path>
+            </svg>
+          </a>
+        </div>
+        <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
+          <div class="rounded-lg h-64 overflow-hidden">
+            <img alt="content" class="object-cover object-center h-full w-full" src="https://dummyimage.com/1205x505">
+          </div>
+          <h2 class="text-xl font-medium title-font text-gray-900 mt-5">The 400 Blows</h2>
+          <p class="text-base leading-relaxed mt-2">Swag shoivdigoitch literally meditation subway tile tumblr
+            cold-pressed. Gastropub street art beard dreamcatcher neutra, ethical XOXO lumbersexual.</p>
+          <a class="text-indigo-500 inline-flex items-center mt-3">Read More
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+              <path d="M5 12h14M12 5l7 7-7 7"></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- 3 blog End -->
+  <!-- 2 Big Blog -->
+  <section class="text-gray-700 body-font">
+    <div class="container px-5 py-24 mx-auto">
+      <div class="flex flex-wrap -mx-4 -mb-10 text-center">
+        <div class="sm:w-1/2 mb-10 px-4">
+          <div class="rounded-lg h-64 overflow-hidden">
+            <img alt="content" class="object-cover object-center h-full w-full" src="https://dummyimage.com/1201x501">
+          </div>
+          <h2 class="title-font text-2xl font-medium text-gray-900 mt-6 mb-3">Buy YouTube Videos</h2>
+          <p class="leading-relaxed text-base">Williamsburg occupy sustainable snackwave gochujang. Pinterest cornhole
+            brunch, slow-carb neutra irony.</p>
+          <button
+            class="flex mx-auto mt-6 text-white bg-indigo-500 border-0 py-2 px-5 focus:outline-none hover:bg-indigo-600 rounded">Button</button>
+        </div>
+        <div class="sm:w-1/2 mb-10 px-4">
+          <div class="rounded-lg h-64 overflow-hidden">
+            <img alt="content" class="object-cover object-center h-full w-full" src="https://dummyimage.com/1202x502">
+          </div>
+          <h2 class="title-font text-2xl font-medium text-gray-900 mt-6 mb-3">The Catalyzer</h2>
+          <p class="leading-relaxed text-base">Williamsburg occupy sustainable snackwave gochujang. Pinterest cornhole
+            brunch, slow-carb neutra irony.</p>
+          <button
+            class="flex mx-auto mt-6 text-white bg-indigo-500 border-0 py-2 px-5 focus:outline-none hover:bg-indigo-600 rounded">Button</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- 2 Big Blog End -->
+  <!-- signup form -->
+  <section class="text-gray-700 body-font">
+    <div class="container px-5 py-24 mx-auto flex flex-wrap items-center">
+      <div class="lg:w-3/5 md:w-1/2 md:pr-16 lg:pr-0 pr-0">
+        <h1 class="title-font font-medium text-3xl text-gray-900">Slow-carb next level shoindcgoitch ethical authentic,
+          poko scenester</h1>
+        <p class="leading-relaxed mt-4">Poke slow-carb mixtape knausgaard, typewriter street art gentrify hammock
+          starladder roathse. Craies vegan tousled etsy austin.</p>
+      </div>
+      <div class="lg:w-2/6 md:w-1/2 bg-gray-200 rounded-lg p-8 flex flex-col md:ml-auto w-full mt-10 md:mt-0">
+        <h2 class="text-gray-900 text-lg font-medium title-font mb-5">Sign Up</h2>
+        <input
+          class="bg-white rounded border border-gray-400 focus:outline-none focus:border-indigo-500 text-base px-4 py-2 mb-4"
+          placeholder="Full Name" type="text">
+        <input
+          class="bg-white rounded border border-gray-400 focus:outline-none focus:border-indigo-500 text-base px-4 py-2 mb-4"
+          placeholder="Email" type="email">
+        <button
+          class="text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">Button</button>
+        <p class="text-xs text-gray-500 mt-3">Literally you probably haven't heard of them jean shorts.</p>
+      </div>
+    </div>
+  </section>
+  <!-- signup form End -->
+  <!-- 3 blog -->
+  <section class="text-gray-700 body-font">
+    <div class="container px-5 py-24 mx-auto">
+      <div class="flex flex-col">
+        <div class="h-1 bg-gray-200 rounded overflow-hidden">
+          <div class="w-24 h-full bg-indigo-500"></div>
+        </div>
+        <div class="flex flex-wrap sm:flex-row flex-col py-6 mb-12">
+          <h1 class="sm:w-2/5 text-gray-900 font-medium title-font text-2xl mb-2 sm:mb-0">Space The Final Frontier</h1>
+          <p class="sm:w-3/5 leading-relaxed text-base sm:pl-10 pl-0">Street art subway tile salvia four dollar toast
+            bitters selfies quinoa yuccie synth meditation iPhone intelligentsia prism tofu. Viral gochujang bitters
+            dreamcatcher.</p>
+        </div>
+      </div>
+      <div class="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4">
+        <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
+          <div class="rounded-lg h-64 overflow-hidden">
+            <img alt="content" class="object-cover object-center h-full w-full" src="https://dummyimage.com/1203x503">
+          </div>
+          <h2 class="text-xl font-medium title-font text-gray-900 mt-5">Shooting Stars</h2>
+          <p class="text-base leading-relaxed mt-2">Swag shoivdigoitch literally meditation subway tile tumblr
+            cold-pressed. Gastropub street art beard dreamcatcher neutra, ethical XOXO lumbersexual.</p>
+          <a class="text-indigo-500 inline-flex items-center mt-3">Read More
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+              <path d="M5 12h14M12 5l7 7-7 7"></path>
+            </svg>
+          </a>
+        </div>
+        <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
+          <div class="rounded-lg h-64 overflow-hidden">
+            <img alt="content" class="object-cover object-center h-full w-full" src="https://dummyimage.com/1204x504">
+          </div>
+          <h2 class="text-xl font-medium title-font text-gray-900 mt-5">The Catalyzer</h2>
+          <p class="text-base leading-relaxed mt-2">Swag shoivdigoitch literally meditation subway tile tumblr
+            cold-pressed. Gastropub street art beard dreamcatcher neutra, ethical XOXO lumbersexual.</p>
+          <a class="text-indigo-500 inline-flex items-center mt-3">Read More
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+              <path d="M5 12h14M12 5l7 7-7 7"></path>
+            </svg>
+          </a>
+        </div>
+        <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
+          <div class="rounded-lg h-64 overflow-hidden">
+            <img alt="content" class="object-cover object-center h-full w-full" src="https://dummyimage.com/1205x505">
+          </div>
+          <h2 class="text-xl font-medium title-font text-gray-900 mt-5">The 400 Blows</h2>
+          <p class="text-base leading-relaxed mt-2">Swag shoivdigoitch literally meditation subway tile tumblr
+            cold-pressed. Gastropub street art beard dreamcatcher neutra, ethical XOXO lumbersexual.</p>
+          <a class="text-indigo-500 inline-flex items-center mt-3">Read More
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+              <path d="M5 12h14M12 5l7 7-7 7"></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- 3 blog End -->
+  <!-- 4 blog -->
+  <section class="text-gray-700 body-font">
+    <div class="container px-5 py-24 mx-auto">
+      <div class="flex flex-col text-center w-full mb-20">
+        <h2 class="text-xs text-indigo-500 tracking-widest font-medium title-font mb-1">ROOF PARTY POLAROID</h2>
+        <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Master Cleanse Reliac Heirloom</h1>
+        <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Whatever cardigan tote bag tumblr hexagon brooklyn
+          asymmetrical gentrify, subway tile poke farm-to-table. Franzen you probably haven't heard of them man bun deep
+          jianbing selfies heirloom prism food truck ugh squid celiac humblebrag.</p>
+      </div>
+      <div class="flex flex-wrap">
+        <div class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200">
+          <h2 class="text-lg sm:text-xl text-gray-900 font-medium title-font mb-2">Shooting Stars</h2>
+          <p class="leading-relaxed text-base mb-4">Fingerstache flexitarian street art 8-bit waistcoat. Distillery
+            hexagon disrupt edison bulbche.</p>
+          <a class="text-indigo-500 inline-flex items-center">Read More
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+              <path d="M5 12h14M12 5l7 7-7 7"></path>
+            </svg>
+          </a>
+        </div>
+        <div class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200">
+          <h2 class="text-lg sm:text-xl text-gray-900 font-medium title-font mb-2">The Catalyzer</h2>
+          <p class="leading-relaxed text-base mb-4">Fingerstache flexitarian street art 8-bit waistcoat. Distillery
+            hexagon disrupt edison bulbche.</p>
+          <a class="text-indigo-500 inline-flex items-center">Read More
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+              <path d="M5 12h14M12 5l7 7-7 7"></path>
+            </svg>
+          </a>
+        </div>
+        <div class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200">
+          <h2 class="text-lg sm:text-xl text-gray-900 font-medium title-font mb-2">Neptune</h2>
+          <p class="leading-relaxed text-base mb-4">Fingerstache flexitarian street art 8-bit waistcoat. Distillery
+            hexagon disrupt edison bulbche.</p>
+          <a class="text-indigo-500 inline-flex items-center">Read More
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+              <path d="M5 12h14M12 5l7 7-7 7"></path>
+            </svg>
+          </a>
+        </div>
+        <div class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200">
+          <h2 class="text-lg sm:text-xl text-gray-900 font-medium title-font mb-2">Melanchole</h2>
+          <p class="leading-relaxed text-base mb-4">Fingerstache flexitarian street art 8-bit waistcoat. Distillery
+            hexagon disrupt edison bulbche.</p>
+          <a class="text-indigo-500 inline-flex items-center">Read More
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+              <path d="M5 12h14M12 5l7 7-7 7"></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+      <button
+        class="flex mx-auto mt-16 text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">Button</button>
+    </div>
+  </section>
+  <!-- 4 blog End -->
+  <!-- Single Line Blog -->
+  <section class="text-gray-700 body-font">
+    <div class="container px-5 py-24 mx-auto flex flex-wrap">
+      <h2 class="sm:text-3xl text-2xl text-gray-900 font-medium title-font mb-2 md:w-2/5">Kickstarter Actually Pinterest
+        Brunch Bitters Occupy</h2>
+      <div class="md:w-3/5 md:pl-6">
+        <p class="leading-relaxed text-base">Taxidermy bushwick celiac master cleanse microdosing seitan. Fashion axe
+          four dollar toast truffaut, direct trade kombucha brunch williamsburg keffiyeh gastropub tousled squid meh
+          taiyaki drinking vinegar tacos.</p>
+        <div class="flex md:mt-4 mt-6">
+          <button
+            class="inline-flex text-white bg-indigo-500 border-0 py-1 px-4 focus:outline-none hover:bg-indigo-600 rounded">Button</button>
+          <a class="text-indigo-500 inline-flex items-center ml-4">Read More
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+              <path d="M5 12h14M12 5l7 7-7 7"></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Single Line Blog End -->
+  <!-- 3 blog -->
+  <section class="text-gray-700 body-font">
+    <div class="container px-5 py-24 mx-auto">
+      <div class="flex flex-col">
+        <div class="h-1 bg-gray-200 rounded overflow-hidden">
+          <div class="w-24 h-full bg-indigo-500"></div>
+        </div>
+        <div class="flex flex-wrap sm:flex-row flex-col py-6 mb-12">
+          <h1 class="sm:w-2/5 text-gray-900 font-medium title-font text-2xl mb-2 sm:mb-0">Space The Final Frontier</h1>
+          <p class="sm:w-3/5 leading-relaxed text-base sm:pl-10 pl-0">Street art subway tile salvia four dollar toast
+            bitters selfies quinoa yuccie synth meditation iPhone intelligentsia prism tofu. Viral gochujang bitters
+            dreamcatcher.</p>
+        </div>
+      </div>
+      <div class="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4">
+        <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
+          <div class="rounded-lg h-64 overflow-hidden">
+            <img alt="content" class="object-cover object-center h-full w-full" src="https://dummyimage.com/1203x503">
+          </div>
+          <h2 class="text-xl font-medium title-font text-gray-900 mt-5">Shooting Stars</h2>
+          <p class="text-base leading-relaxed mt-2">Swag shoivdigoitch literally meditation subway tile tumblr
+            cold-pressed. Gastropub street art beard dreamcatcher neutra, ethical XOXO lumbersexual.</p>
+          <a class="text-indigo-500 inline-flex items-center mt-3">Read More
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+              <path d="M5 12h14M12 5l7 7-7 7"></path>
+            </svg>
+          </a>
+        </div>
+        <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
+          <div class="rounded-lg h-64 overflow-hidden">
+            <img alt="content" class="object-cover object-center h-full w-full" src="https://dummyimage.com/1204x504">
+          </div>
+          <h2 class="text-xl font-medium title-font text-gray-900 mt-5">The Catalyzer</h2>
+          <p class="text-base leading-relaxed mt-2">Swag shoivdigoitch literally meditation subway tile tumblr
+            cold-pressed. Gastropub street art beard dreamcatcher neutra, ethical XOXO lumbersexual.</p>
+          <a class="text-indigo-500 inline-flex items-center mt-3">Read More
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+              <path d="M5 12h14M12 5l7 7-7 7"></path>
+            </svg>
+          </a>
+        </div>
+        <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
+          <div class="rounded-lg h-64 overflow-hidden">
+            <img alt="content" class="object-cover object-center h-full w-full" src="https://dummyimage.com/1205x505">
+          </div>
+          <h2 class="text-xl font-medium title-font text-gray-900 mt-5">The 400 Blows</h2>
+          <p class="text-base leading-relaxed mt-2">Swag shoivdigoitch literally meditation subway tile tumblr
+            cold-pressed. Gastropub street art beard dreamcatcher neutra, ethical XOXO lumbersexual.</p>
+          <a class="text-indigo-500 inline-flex items-center mt-3">Read More
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+              <path d="M5 12h14M12 5l7 7-7 7"></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- 3 blog End -->
+  <!-- Infinite Line Blog -->
+  <section class="text-gray-700 body-font overflow-hidden">
+    <div class="container px-5 py-24 mx-auto">
+      <div class="-my-8">
+        <div class="py-8 flex flex-wrap md:flex-no-wrap">
+          <div class="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
+            <span class="tracking-widest font-medium title-font text-gray-900">CATEGORY</span>
+            <span class="mt-1 text-gray-500 text-sm">12 Jun 2019</span>
+          </div>
+          <div class="md:flex-grow">
+            <h2 class="text-2xl font-medium text-gray-900 title-font mb-2">Bitters hashtag waistcoat fashion axe chia
+              unicorn</h2>
+            <p class="leading-relaxed">Glossier echo park pug, church-key sartorial biodiesel vexillologist pop-up
+              snackwave ramps cornhole. Marfa 3 wolf moon party messenger bag selfies, poke vaporware kombucha
+              lumbersexual pork belly polaroid hoodie portland craft beer.</p>
+            <a class="text-indigo-500 inline-flex items-center mt-4">Read More
+              <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M5 12h14"></path>
+                <path d="M12 5l7 7-7 7"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="py-8 flex border-t-2 border-gray-200 flex-wrap md:flex-no-wrap">
+          <div class="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
+            <span class="tracking-widest font-medium title-font text-gray-900">CATEGORY</span>
+            <span class="mt-1 text-gray-500 text-sm">12 Jun 2019</span>
+          </div>
+          <div class="md:flex-grow">
+            <h2 class="text-2xl font-medium text-gray-900 title-font mb-2">Meditation bushwick direct trade taxidermy
+              shaman</h2>
+            <p class="leading-relaxed">Glossier echo park pug, church-key sartorial biodiesel vexillologist pop-up
+              snackwave ramps cornhole. Marfa 3 wolf moon party messenger bag selfies, poke vaporware kombucha
+              lumbersexual pork belly polaroid hoodie portland craft beer.</p>
+            <a class="text-indigo-500 inline-flex items-center mt-4">Read More
+              <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M5 12h14"></path>
+                <path d="M12 5l7 7-7 7"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="py-8 flex border-t-2 border-gray-200 flex-wrap md:flex-no-wrap">
+          <div class="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
+            <span class="tracking-widest font-medium title-font text-gray-900">CATEGORY</span>
+            <span class="mt-1 text-gray-500 text-sm">12 Jun 2019</span>
+          </div>
+          <div class="md:flex-grow">
+            <h2 class="text-2xl font-medium text-gray-900 title-font mb-2">Woke master cleanse drinking vinegar salvia
+            </h2>
+            <p class="leading-relaxed">Glossier echo park pug, church-key sartorial biodiesel vexillologist pop-up
+              snackwave ramps cornhole. Marfa 3 wolf moon party messenger bag selfies, poke vaporware kombucha
+              lumbersexual pork belly polaroid hoodie portland craft beer.</p>
+            <a class="text-indigo-500 inline-flex items-center mt-4">Read More
+              <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M5 12h14"></path>
+                <path d="M12 5l7 7-7 7"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Infinite Line Blog End -->
+  <!-- Middle End -->
+  <!-- Footer -->
+  <footer class="text-gray-500 bg-gray-900 body-font">
+    <div class="container px-5 py-24 mx-auto">
+      <div class="flex flex-wrap md:text-left text-center -mb-10 -mx-4">
+        <div class="lg:w-1/6 md:w-1/2 w-full px-4">
+          <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">CATEGORIES</h2>
+          <nav class="list-none mb-10">
+            <li>
+              <a class="text-gray-600 hover:text-white">First Link</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-white">Second Link</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-white">Third Link</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-white">Fourth Link</a>
+            </li>
           </nav>
-          <div class="registerButton p-1 m-2 rounded-lg md:m-1 sm:m-0 border-none">
-            <div class=" items-center  bg-gray-900 hover:bg-black border-none rounded-lg  text-white text-sm py-1 px-2 md:py-2 md:px-4 md:text-base">Register!</div>
-          </div>
         </div>
-      </header>
-    <!-- Header End -->
-    <!-- Middle -->
-    <!-- Hero -->
-    <section class="text-gray-700 bg-black body-font">
-        <div class="container px-0 py-2 mx-auto flex flex-wrap">
-          <div class="flex flex-wrap md:-m-2 -m-1 ">
-            <div class="flex flex-wrap w-1/2">
-              <div class="md:p-2 p-1 w-1/2">
-                <img alt="gallery" class="w-full object-cover h-full object-center block" src="https://dummyimage.com/500x300">
-              </div>
-              <div class="md:p-2 p-1 w-1/2">
-                <img alt="gallery" class="w-full object-cover h-full object-center block" src="https://dummyimage.com/501x301">
-              </div>
-              <div class="md:p-2 p-1 w-full">
-                <img alt="gallery" class="w-full h-full object-cover object-center block" src="https://dummyimage.com/600x360">
-              </div>
-            </div>
-            <div class="flex flex-wrap w-1/2">
-              <div class="md:p-2 p-1 w-full">
-                <img alt="gallery" class="w-full h-full object-cover object-center block" src="https://dummyimage.com/601x361">
-              </div>
-              <div class="md:p-2 p-1 w-1/2">
-                <img alt="gallery" class="w-full object-cover h-full object-center block" src="https://dummyimage.com/502x302">
-              </div>
-              <div class="md:p-2 p-1 w-1/2">
-                <img alt="gallery" class="w-full object-cover h-full object-center block" src="https://dummyimage.com/503x303">
-              </div>
-            </div>
-          </div>
+        <div class="lg:w-1/6 md:w-1/2 w-full px-4">
+          <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">CATEGORIES</h2>
+          <nav class="list-none mb-10">
+            <li>
+              <a class="text-gray-600 hover:text-white">First Link</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-white">Second Link</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-white">Third Link</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-white">Fourth Link</a>
+            </li>
+          </nav>
         </div>
-      </section>
-      <!-- Hero -->
-      <!-- Lined Blogs -->
-      <section class="text-gray-700 body-font overflow-hidden">
-        <div class="container px-5 py-24 mx-auto">
-          <div class="-my-8">
-            <div class="py-8 flex flex-wrap md:flex-no-wrap">
-              <div class="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
-                <span class="tracking-widest font-medium title-font text-gray-900">CATEGORY</span>
-                <span class="mt-1 text-gray-500 text-sm">12 Jun 2019</span>
-              </div>
-              <div class="md:flex-grow">
-                <h2 class="text-2xl font-medium text-gray-900 title-font mb-2">Bitters hashtag waistcoat fashion axe chia unicorn</h2>
-                <p class="leading-relaxed">Glossier echo park pug, church-key sartorial biodiesel vexillologist pop-up snackwave ramps cornhole. Marfa 3 wolf moon party messenger bag selfies, poke vaporware kombucha lumbersexual pork belly polaroid hoodie portland craft beer.</p>
-                <a class="text-indigo-500 inline-flex items-center mt-4">Learn More
-                  <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M5 12h14"></path>
-                    <path d="M12 5l7 7-7 7"></path>
-                  </svg>
-                </a>
-              </div>
-            </div>
-            <div class="py-8 flex border-t-2 border-gray-200 flex-wrap md:flex-no-wrap">
-              <div class="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
-                <span class="tracking-widest font-medium title-font text-gray-900">CATEGORY</span>
-                <span class="mt-1 text-gray-500 text-sm">12 Jun 2019</span>
-              </div>
-              <div class="md:flex-grow">
-                <h2 class="text-2xl font-medium text-gray-900 title-font mb-2">Meditation bushwick direct trade taxidermy shaman</h2>
-                <p class="leading-relaxed">Glossier echo park pug, church-key sartorial biodiesel vexillologist pop-up snackwave ramps cornhole. Marfa 3 wolf moon party messenger bag selfies, poke vaporware kombucha lumbersexual pork belly polaroid hoodie portland craft beer.</p>
-                <a class="text-indigo-500 inline-flex items-center mt-4">Learn More
-                  <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M5 12h14"></path>
-                    <path d="M12 5l7 7-7 7"></path>
-                  </svg>
-                </a>
-              </div>
-            </div>
-            <div class="py-8 flex border-t-2 border-gray-200 flex-wrap md:flex-no-wrap">
-              <div class="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
-                <span class="tracking-widest font-medium title-font text-gray-900">CATEGORY</span>
-                <span class="mt-1 text-gray-500 text-sm">12 Jun 2019</span>
-              </div>
-              <div class="md:flex-grow">
-                <h2 class="text-2xl font-medium text-gray-900 title-font mb-2">Woke master cleanse drinking vinegar salvia</h2>
-                <p class="leading-relaxed">Glossier echo park pug, church-key sartorial biodiesel vexillologist pop-up snackwave ramps cornhole. Marfa 3 wolf moon party messenger bag selfies, poke vaporware kombucha lumbersexual pork belly polaroid hoodie portland craft beer.</p>
-                <a class="text-indigo-500 inline-flex items-center mt-4">Learn More
-                  <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M5 12h14"></path>
-                    <path d="M12 5l7 7-7 7"></path>
-                  </svg>
-                </a>
-              </div>
-            </div>
-          </div>
+        <div class="lg:w-1/6 md:w-1/2 w-full px-4">
+          <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">CATEGORIES</h2>
+          <nav class="list-none mb-10">
+            <li>
+              <a class="text-gray-600 hover:text-white">First Link</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-white">Second Link</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-white">Third Link</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-white">Fourth Link</a>
+            </li>
+          </nav>
         </div>
-      </section>
-      <!-- Lined Blogs End-->
-      <!-- 3 blog -->
-      <section class="text-gray-700 body-font">
-        <div class="container px-5 py-24 mx-auto">
-          <div class="flex flex-col">
-            <div class="h-1 bg-gray-200 rounded overflow-hidden">
-              <div class="w-24 h-full bg-indigo-500"></div>
-            </div>
-            <div class="flex flex-wrap sm:flex-row flex-col py-6 mb-12">
-              <h1 class="sm:w-2/5 text-gray-900 font-medium title-font text-2xl mb-2 sm:mb-0">Space The Final Frontier</h1>
-              <p class="sm:w-3/5 leading-relaxed text-base sm:pl-10 pl-0">Street art subway tile salvia four dollar toast bitters selfies quinoa yuccie synth meditation iPhone intelligentsia prism tofu. Viral gochujang bitters dreamcatcher.</p>
-            </div>
-          </div>
-          <div class="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4">
-            <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
-              <div class="rounded-lg h-64 overflow-hidden">
-                <img alt="content" class="object-cover object-center h-full w-full" src="https://dummyimage.com/1203x503">
-              </div>
-              <h2 class="text-xl font-medium title-font text-gray-900 mt-5">Shooting Stars</h2>
-              <p class="text-base leading-relaxed mt-2">Swag shoivdigoitch literally meditation subway tile tumblr cold-pressed. Gastropub street art beard dreamcatcher neutra, ethical XOXO lumbersexual.</p>
-              <a class="text-indigo-500 inline-flex items-center mt-3">Learn More
-                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
-                  <path d="M5 12h14M12 5l7 7-7 7"></path>
-                </svg>
-              </a>
-            </div>
-            <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
-              <div class="rounded-lg h-64 overflow-hidden">
-                <img alt="content" class="object-cover object-center h-full w-full" src="https://dummyimage.com/1204x504">
-              </div>
-              <h2 class="text-xl font-medium title-font text-gray-900 mt-5">The Catalyzer</h2>
-              <p class="text-base leading-relaxed mt-2">Swag shoivdigoitch literally meditation subway tile tumblr cold-pressed. Gastropub street art beard dreamcatcher neutra, ethical XOXO lumbersexual.</p>
-              <a class="text-indigo-500 inline-flex items-center mt-3">Learn More
-                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
-                  <path d="M5 12h14M12 5l7 7-7 7"></path>
-                </svg>
-              </a>
-            </div>
-            <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
-              <div class="rounded-lg h-64 overflow-hidden">
-                <img alt="content" class="object-cover object-center h-full w-full" src="https://dummyimage.com/1205x505">
-              </div>
-              <h2 class="text-xl font-medium title-font text-gray-900 mt-5">The 400 Blows</h2>
-              <p class="text-base leading-relaxed mt-2">Swag shoivdigoitch literally meditation subway tile tumblr cold-pressed. Gastropub street art beard dreamcatcher neutra, ethical XOXO lumbersexual.</p>
-              <a class="text-indigo-500 inline-flex items-center mt-3">Learn More
-                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
-                  <path d="M5 12h14M12 5l7 7-7 7"></path>
-                </svg>
-              </a>
-            </div>
-          </div>
+        <div class="lg:w-1/6 md:w-1/2 w-full px-4">
+          <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">CATEGORIES</h2>
+          <nav class="list-none mb-10">
+            <li>
+              <a class="text-gray-600 hover:text-white">First Link</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-white">Second Link</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-white">Third Link</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-white">Fourth Link</a>
+            </li>
+          </nav>
         </div>
-      </section>
-      <!-- 3 blog End -->
-      <!-- 2 Big Blog -->
-      <section class="text-gray-700 body-font">
-        <div class="container px-5 py-24 mx-auto">
-          <div class="flex flex-wrap -mx-4 -mb-10 text-center">
-            <div class="sm:w-1/2 mb-10 px-4">
-              <div class="rounded-lg h-64 overflow-hidden">
-                <img alt="content" class="object-cover object-center h-full w-full" src="https://dummyimage.com/1201x501">
-              </div>
-              <h2 class="title-font text-2xl font-medium text-gray-900 mt-6 mb-3">Buy YouTube Videos</h2>
-              <p class="leading-relaxed text-base">Williamsburg occupy sustainable snackwave gochujang. Pinterest cornhole brunch, slow-carb neutra irony.</p>
-              <button class="flex mx-auto mt-6 text-white bg-indigo-500 border-0 py-2 px-5 focus:outline-none hover:bg-indigo-600 rounded">Button</button>
-            </div>
-            <div class="sm:w-1/2 mb-10 px-4">
-              <div class="rounded-lg h-64 overflow-hidden">
-                <img alt="content" class="object-cover object-center h-full w-full" src="https://dummyimage.com/1202x502">
-              </div>
-              <h2 class="title-font text-2xl font-medium text-gray-900 mt-6 mb-3">The Catalyzer</h2>
-              <p class="leading-relaxed text-base">Williamsburg occupy sustainable snackwave gochujang. Pinterest cornhole brunch, slow-carb neutra irony.</p>
-              <button class="flex mx-auto mt-6 text-white bg-indigo-500 border-0 py-2 px-5 focus:outline-none hover:bg-indigo-600 rounded">Button</button>
-            </div>
-          </div>
+        <div class="lg:w-1/6 md:w-1/2 w-full px-4">
+          <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">CATEGORIES</h2>
+          <nav class="list-none mb-10">
+            <li>
+              <a class="text-gray-600 hover:text-white">First Link</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-white">Second Link</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-white">Third Link</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-white">Fourth Link</a>
+            </li>
+          </nav>
         </div>
-      </section>
-      <!-- 2 Big Blog End -->
-      <!-- signup form -->
-      <section class="text-gray-700 body-font">
-        <div class="container px-5 py-24 mx-auto flex flex-wrap items-center">
-          <div class="lg:w-3/5 md:w-1/2 md:pr-16 lg:pr-0 pr-0">
-            <h1 class="title-font font-medium text-3xl text-gray-900">Slow-carb next level shoindcgoitch ethical authentic, poko scenester</h1>
-            <p class="leading-relaxed mt-4">Poke slow-carb mixtape knausgaard, typewriter street art gentrify hammock starladder roathse. Craies vegan tousled etsy austin.</p>
-          </div>
-          <div class="lg:w-2/6 md:w-1/2 bg-gray-200 rounded-lg p-8 flex flex-col md:ml-auto w-full mt-10 md:mt-0">
-            <h2 class="text-gray-900 text-lg font-medium title-font mb-5">Sign Up</h2>
-            <input class="bg-white rounded border border-gray-400 focus:outline-none focus:border-indigo-500 text-base px-4 py-2 mb-4" placeholder="Full Name" type="text">
-            <input class="bg-white rounded border border-gray-400 focus:outline-none focus:border-indigo-500 text-base px-4 py-2 mb-4" placeholder="Email" type="email">
-            <button class="text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">Button</button>
-            <p class="text-xs text-gray-500 mt-3">Literally you probably haven't heard of them jean shorts.</p>
-          </div>
+        <div class="lg:w-1/6 md:w-1/2 w-full px-4">
+          <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">CATEGORIES</h2>
+          <nav class="list-none mb-10">
+            <li>
+              <a class="text-gray-600 hover:text-white">First Link</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-white">Second Link</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-white">Third Link</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-white">Fourth Link</a>
+            </li>
+          </nav>
         </div>
-      </section>
-      <!-- signup form End -->
-      <!-- 3 blog -->
-      <section class="text-gray-700 body-font">
-        <div class="container px-5 py-24 mx-auto">
-          <div class="flex flex-col">
-            <div class="h-1 bg-gray-200 rounded overflow-hidden">
-              <div class="w-24 h-full bg-indigo-500"></div>
-            </div>
-            <div class="flex flex-wrap sm:flex-row flex-col py-6 mb-12">
-              <h1 class="sm:w-2/5 text-gray-900 font-medium title-font text-2xl mb-2 sm:mb-0">Space The Final Frontier</h1>
-              <p class="sm:w-3/5 leading-relaxed text-base sm:pl-10 pl-0">Street art subway tile salvia four dollar toast bitters selfies quinoa yuccie synth meditation iPhone intelligentsia prism tofu. Viral gochujang bitters dreamcatcher.</p>
-            </div>
-          </div>
-          <div class="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4">
-            <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
-              <div class="rounded-lg h-64 overflow-hidden">
-                <img alt="content" class="object-cover object-center h-full w-full" src="https://dummyimage.com/1203x503">
-              </div>
-              <h2 class="text-xl font-medium title-font text-gray-900 mt-5">Shooting Stars</h2>
-              <p class="text-base leading-relaxed mt-2">Swag shoivdigoitch literally meditation subway tile tumblr cold-pressed. Gastropub street art beard dreamcatcher neutra, ethical XOXO lumbersexual.</p>
-              <a class="text-indigo-500 inline-flex items-center mt-3">Learn More
-                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
-                  <path d="M5 12h14M12 5l7 7-7 7"></path>
-                </svg>
-              </a>
-            </div>
-            <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
-              <div class="rounded-lg h-64 overflow-hidden">
-                <img alt="content" class="object-cover object-center h-full w-full" src="https://dummyimage.com/1204x504">
-              </div>
-              <h2 class="text-xl font-medium title-font text-gray-900 mt-5">The Catalyzer</h2>
-              <p class="text-base leading-relaxed mt-2">Swag shoivdigoitch literally meditation subway tile tumblr cold-pressed. Gastropub street art beard dreamcatcher neutra, ethical XOXO lumbersexual.</p>
-              <a class="text-indigo-500 inline-flex items-center mt-3">Learn More
-                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
-                  <path d="M5 12h14M12 5l7 7-7 7"></path>
-                </svg>
-              </a>
-            </div>
-            <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
-              <div class="rounded-lg h-64 overflow-hidden">
-                <img alt="content" class="object-cover object-center h-full w-full" src="https://dummyimage.com/1205x505">
-              </div>
-              <h2 class="text-xl font-medium title-font text-gray-900 mt-5">The 400 Blows</h2>
-              <p class="text-base leading-relaxed mt-2">Swag shoivdigoitch literally meditation subway tile tumblr cold-pressed. Gastropub street art beard dreamcatcher neutra, ethical XOXO lumbersexual.</p>
-              <a class="text-indigo-500 inline-flex items-center mt-3">Learn More
-                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
-                  <path d="M5 12h14M12 5l7 7-7 7"></path>
-                </svg>
-              </a>
-            </div>
-          </div>
+      </div>
+    </div>
+    <div class="border-t border-gray-800">
+      <div class="container px-5 py-8 flex flex-wrap mx-auto items-center">
+        <div class="flex md:flex-no-wrap flex-wrap justify-center md:justify-start">
+          <input
+            class="sm:w-64 w-40 bg-gray-800 rounded sm:mr-4 mr-2 border border-gray-700 text-white focus:outline-none focus:border-indigo-500 text-base py-2 px-4"
+            placeholder="Placeholder" type="text">
+          <button
+            class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded">Button</button>
+          <p class="text-gray-600 text-sm md:ml-6 md:mt-0 mt-2 text-center sm:text-left">Bitters chicharrones fanny pack
+            <br class="lg:block hidden">waistcoat green juice
+          </p>
         </div>
-      </section>
-      <!-- 3 blog End -->
-      <!-- 4 blog -->
-      <section class="text-gray-700 body-font">
-        <div class="container px-5 py-24 mx-auto">
-          <div class="flex flex-col text-center w-full mb-20">
-            <h2 class="text-xs text-indigo-500 tracking-widest font-medium title-font mb-1">ROOF PARTY POLAROID</h2>
-            <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Master Cleanse Reliac Heirloom</h1>
-            <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke farm-to-table. Franzen you probably haven't heard of them man bun deep jianbing selfies heirloom prism food truck ugh squid celiac humblebrag.</p>
-          </div>
-          <div class="flex flex-wrap">
-            <div class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200">
-              <h2 class="text-lg sm:text-xl text-gray-900 font-medium title-font mb-2">Shooting Stars</h2>
-              <p class="leading-relaxed text-base mb-4">Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.</p>
-              <a class="text-indigo-500 inline-flex items-center">Learn More
-                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
-                  <path d="M5 12h14M12 5l7 7-7 7"></path>
-                </svg>
-              </a>
-            </div>
-            <div class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200">
-              <h2 class="text-lg sm:text-xl text-gray-900 font-medium title-font mb-2">The Catalyzer</h2>
-              <p class="leading-relaxed text-base mb-4">Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.</p>
-              <a class="text-indigo-500 inline-flex items-center">Learn More
-                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
-                  <path d="M5 12h14M12 5l7 7-7 7"></path>
-                </svg>
-              </a>
-            </div>
-            <div class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200">
-              <h2 class="text-lg sm:text-xl text-gray-900 font-medium title-font mb-2">Neptune</h2>
-              <p class="leading-relaxed text-base mb-4">Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.</p>
-              <a class="text-indigo-500 inline-flex items-center">Learn More
-                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
-                  <path d="M5 12h14M12 5l7 7-7 7"></path>
-                </svg>
-              </a>
-            </div>
-            <div class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200">
-              <h2 class="text-lg sm:text-xl text-gray-900 font-medium title-font mb-2">Melanchole</h2>
-              <p class="leading-relaxed text-base mb-4">Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.</p>
-              <a class="text-indigo-500 inline-flex items-center">Learn More
-                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
-                  <path d="M5 12h14M12 5l7 7-7 7"></path>
-                </svg>
-              </a>
-            </div>
-          </div>
-          <button class="flex mx-auto mt-16 text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">Button</button>
-        </div>
-      </section>
-      <!-- 4 blog End -->
-      <!-- Single Line Blog -->
-      <section class="text-gray-700 body-font">
-        <div class="container px-5 py-24 mx-auto flex flex-wrap">
-          <h2 class="sm:text-3xl text-2xl text-gray-900 font-medium title-font mb-2 md:w-2/5">Kickstarter Actually Pinterest Brunch Bitters Occupy</h2>
-          <div class="md:w-3/5 md:pl-6">
-            <p class="leading-relaxed text-base">Taxidermy bushwick celiac master cleanse microdosing seitan. Fashion axe four dollar toast truffaut, direct trade kombucha brunch williamsburg keffiyeh gastropub tousled squid meh taiyaki drinking vinegar tacos.</p>
-            <div class="flex md:mt-4 mt-6">
-              <button class="inline-flex text-white bg-indigo-500 border-0 py-1 px-4 focus:outline-none hover:bg-indigo-600 rounded">Button</button>
-              <a class="text-indigo-500 inline-flex items-center ml-4">Learn More
-                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
-                  <path d="M5 12h14M12 5l7 7-7 7"></path>
-                </svg>
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- Single Line Blog End -->
-      <!-- 3 blog -->
-      <section class="text-gray-700 body-font">
-        <div class="container px-5 py-24 mx-auto">
-          <div class="flex flex-col">
-            <div class="h-1 bg-gray-200 rounded overflow-hidden">
-              <div class="w-24 h-full bg-indigo-500"></div>
-            </div>
-            <div class="flex flex-wrap sm:flex-row flex-col py-6 mb-12">
-              <h1 class="sm:w-2/5 text-gray-900 font-medium title-font text-2xl mb-2 sm:mb-0">Space The Final Frontier</h1>
-              <p class="sm:w-3/5 leading-relaxed text-base sm:pl-10 pl-0">Street art subway tile salvia four dollar toast bitters selfies quinoa yuccie synth meditation iPhone intelligentsia prism tofu. Viral gochujang bitters dreamcatcher.</p>
-            </div>
-          </div>
-          <div class="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4">
-            <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
-              <div class="rounded-lg h-64 overflow-hidden">
-                <img alt="content" class="object-cover object-center h-full w-full" src="https://dummyimage.com/1203x503">
-              </div>
-              <h2 class="text-xl font-medium title-font text-gray-900 mt-5">Shooting Stars</h2>
-              <p class="text-base leading-relaxed mt-2">Swag shoivdigoitch literally meditation subway tile tumblr cold-pressed. Gastropub street art beard dreamcatcher neutra, ethical XOXO lumbersexual.</p>
-              <a class="text-indigo-500 inline-flex items-center mt-3">Learn More
-                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
-                  <path d="M5 12h14M12 5l7 7-7 7"></path>
-                </svg>
-              </a>
-            </div>
-            <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
-              <div class="rounded-lg h-64 overflow-hidden">
-                <img alt="content" class="object-cover object-center h-full w-full" src="https://dummyimage.com/1204x504">
-              </div>
-              <h2 class="text-xl font-medium title-font text-gray-900 mt-5">The Catalyzer</h2>
-              <p class="text-base leading-relaxed mt-2">Swag shoivdigoitch literally meditation subway tile tumblr cold-pressed. Gastropub street art beard dreamcatcher neutra, ethical XOXO lumbersexual.</p>
-              <a class="text-indigo-500 inline-flex items-center mt-3">Learn More
-                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
-                  <path d="M5 12h14M12 5l7 7-7 7"></path>
-                </svg>
-              </a>
-            </div>
-            <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
-              <div class="rounded-lg h-64 overflow-hidden">
-                <img alt="content" class="object-cover object-center h-full w-full" src="https://dummyimage.com/1205x505">
-              </div>
-              <h2 class="text-xl font-medium title-font text-gray-900 mt-5">The 400 Blows</h2>
-              <p class="text-base leading-relaxed mt-2">Swag shoivdigoitch literally meditation subway tile tumblr cold-pressed. Gastropub street art beard dreamcatcher neutra, ethical XOXO lumbersexual.</p>
-              <a class="text-indigo-500 inline-flex items-center mt-3">Learn More
-                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
-                  <path d="M5 12h14M12 5l7 7-7 7"></path>
-                </svg>
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- 3 blog End -->
-      <!-- Infinite Line Blog -->
-      <section class="text-gray-700 body-font overflow-hidden">
-        <div class="container px-5 py-24 mx-auto">
-          <div class="-my-8">
-            <div class="py-8 flex flex-wrap md:flex-no-wrap">
-              <div class="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
-                <span class="tracking-widest font-medium title-font text-gray-900">CATEGORY</span>
-                <span class="mt-1 text-gray-500 text-sm">12 Jun 2019</span>
-              </div>
-              <div class="md:flex-grow">
-                <h2 class="text-2xl font-medium text-gray-900 title-font mb-2">Bitters hashtag waistcoat fashion axe chia unicorn</h2>
-                <p class="leading-relaxed">Glossier echo park pug, church-key sartorial biodiesel vexillologist pop-up snackwave ramps cornhole. Marfa 3 wolf moon party messenger bag selfies, poke vaporware kombucha lumbersexual pork belly polaroid hoodie portland craft beer.</p>
-                <a class="text-indigo-500 inline-flex items-center mt-4">Learn More
-                  <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M5 12h14"></path>
-                    <path d="M12 5l7 7-7 7"></path>
-                  </svg>
-                </a>
-              </div>
-            </div>
-            <div class="py-8 flex border-t-2 border-gray-200 flex-wrap md:flex-no-wrap">
-              <div class="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
-                <span class="tracking-widest font-medium title-font text-gray-900">CATEGORY</span>
-                <span class="mt-1 text-gray-500 text-sm">12 Jun 2019</span>
-              </div>
-              <div class="md:flex-grow">
-                <h2 class="text-2xl font-medium text-gray-900 title-font mb-2">Meditation bushwick direct trade taxidermy shaman</h2>
-                <p class="leading-relaxed">Glossier echo park pug, church-key sartorial biodiesel vexillologist pop-up snackwave ramps cornhole. Marfa 3 wolf moon party messenger bag selfies, poke vaporware kombucha lumbersexual pork belly polaroid hoodie portland craft beer.</p>
-                <a class="text-indigo-500 inline-flex items-center mt-4">Learn More
-                  <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M5 12h14"></path>
-                    <path d="M12 5l7 7-7 7"></path>
-                  </svg>
-                </a>
-              </div>
-            </div>
-            <div class="py-8 flex border-t-2 border-gray-200 flex-wrap md:flex-no-wrap">
-              <div class="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
-                <span class="tracking-widest font-medium title-font text-gray-900">CATEGORY</span>
-                <span class="mt-1 text-gray-500 text-sm">12 Jun 2019</span>
-              </div>
-              <div class="md:flex-grow">
-                <h2 class="text-2xl font-medium text-gray-900 title-font mb-2">Woke master cleanse drinking vinegar salvia</h2>
-                <p class="leading-relaxed">Glossier echo park pug, church-key sartorial biodiesel vexillologist pop-up snackwave ramps cornhole. Marfa 3 wolf moon party messenger bag selfies, poke vaporware kombucha lumbersexual pork belly polaroid hoodie portland craft beer.</p>
-                <a class="text-indigo-500 inline-flex items-center mt-4">Learn More
-                  <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M5 12h14"></path>
-                    <path d="M12 5l7 7-7 7"></path>
-                  </svg>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- Infinite Line Blog End -->
-    <!-- Middle End -->
-    <!-- Footer -->
-    <footer class="text-gray-500 bg-gray-900 body-font">
-        <div class="container px-5 py-24 mx-auto">
-          <div class="flex flex-wrap md:text-left text-center -mb-10 -mx-4">
-            <div class="lg:w-1/6 md:w-1/2 w-full px-4">
-              <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">CATEGORIES</h2>
-              <nav class="list-none mb-10">
-                <li>
-                  <a class="text-gray-600 hover:text-white">First Link</a>
-                </li>
-                <li>
-                  <a class="text-gray-600 hover:text-white">Second Link</a>
-                </li>
-                <li>
-                  <a class="text-gray-600 hover:text-white">Third Link</a>
-                </li>
-                <li>
-                  <a class="text-gray-600 hover:text-white">Fourth Link</a>
-                </li>
-              </nav>
-            </div>
-            <div class="lg:w-1/6 md:w-1/2 w-full px-4">
-              <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">CATEGORIES</h2>
-              <nav class="list-none mb-10">
-                <li>
-                  <a class="text-gray-600 hover:text-white">First Link</a>
-                </li>
-                <li>
-                  <a class="text-gray-600 hover:text-white">Second Link</a>
-                </li>
-                <li>
-                  <a class="text-gray-600 hover:text-white">Third Link</a>
-                </li>
-                <li>
-                  <a class="text-gray-600 hover:text-white">Fourth Link</a>
-                </li>
-              </nav>
-            </div>
-            <div class="lg:w-1/6 md:w-1/2 w-full px-4">
-              <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">CATEGORIES</h2>
-              <nav class="list-none mb-10">
-                <li>
-                  <a class="text-gray-600 hover:text-white">First Link</a>
-                </li>
-                <li>
-                  <a class="text-gray-600 hover:text-white">Second Link</a>
-                </li>
-                <li>
-                  <a class="text-gray-600 hover:text-white">Third Link</a>
-                </li>
-                <li>
-                  <a class="text-gray-600 hover:text-white">Fourth Link</a>
-                </li>
-              </nav>
-            </div>
-            <div class="lg:w-1/6 md:w-1/2 w-full px-4">
-              <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">CATEGORIES</h2>
-              <nav class="list-none mb-10">
-                <li>
-                  <a class="text-gray-600 hover:text-white">First Link</a>
-                </li>
-                <li>
-                  <a class="text-gray-600 hover:text-white">Second Link</a>
-                </li>
-                <li>
-                  <a class="text-gray-600 hover:text-white">Third Link</a>
-                </li>
-                <li>
-                  <a class="text-gray-600 hover:text-white">Fourth Link</a>
-                </li>
-              </nav>
-            </div>
-            <div class="lg:w-1/6 md:w-1/2 w-full px-4">
-              <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">CATEGORIES</h2>
-              <nav class="list-none mb-10">
-                <li>
-                  <a class="text-gray-600 hover:text-white">First Link</a>
-                </li>
-                <li>
-                  <a class="text-gray-600 hover:text-white">Second Link</a>
-                </li>
-                <li>
-                  <a class="text-gray-600 hover:text-white">Third Link</a>
-                </li>
-                <li>
-                  <a class="text-gray-600 hover:text-white">Fourth Link</a>
-                </li>
-              </nav>
-            </div>
-            <div class="lg:w-1/6 md:w-1/2 w-full px-4">
-              <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">CATEGORIES</h2>
-              <nav class="list-none mb-10">
-                <li>
-                  <a class="text-gray-600 hover:text-white">First Link</a>
-                </li>
-                <li>
-                  <a class="text-gray-600 hover:text-white">Second Link</a>
-                </li>
-                <li>
-                  <a class="text-gray-600 hover:text-white">Third Link</a>
-                </li>
-                <li>
-                  <a class="text-gray-600 hover:text-white">Fourth Link</a>
-                </li>
-              </nav>
-            </div>
-          </div>
-        </div>
-        <div class="border-t border-gray-800">
-          <div class="container px-5 py-8 flex flex-wrap mx-auto items-center">
-            <div class="flex md:flex-no-wrap flex-wrap justify-center md:justify-start">
-              <input class="sm:w-64 w-40 bg-gray-800 rounded sm:mr-4 mr-2 border border-gray-700 text-white focus:outline-none focus:border-indigo-500 text-base py-2 px-4" placeholder="Placeholder" type="text">
-              <button class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded">Button</button>
-              <p class="text-gray-600 text-sm md:ml-6 md:mt-0 mt-2 text-center sm:text-left">Bitters chicharrones fanny pack
-                <br class="lg:block hidden">waistcoat green juice
-              </p>
-            </div>
-            <span class="inline-flex lg:ml-auto lg:mt-0 mt-6 w-full justify-center md:justify-start md:w-auto">
-              <a class="text-gray-600">
-                <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-                  <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
-                </svg>
-              </a>
-              <a class="ml-3 text-gray-600">
-                <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-                  <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
-                </svg>
-              </a>
-              <a class="ml-3 text-gray-600">
-                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-                  <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
-                  <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
-                </svg>
-              </a>
-              <a class="ml-3 text-gray-600">
-                <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
-                  <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
-                  <circle cx="4" cy="4" r="2" stroke="none"></circle>
-                </svg>
-              </a>
-            </span>
-          </div>
-        </div>
-        <div class="bg-gray-800">
-          <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
-            <p class="text-gray-600 text-sm text-center sm:text-left">© 2020 tailblocks —
-              <a href="https://twitter.com/knyttneve" class="text-gray-500 ml-1" target="_blank" rel="noopener noreferrer">@knyttneve</a>
-            </p>
-            <span class="sm:ml-auto sm:mt-0 mt-2 sm:w-auto w-full sm:text-left text-center text-gray-600 text-sm">Enamel pin tousled raclette tacos irony</span>
-          </div>
-        </div>
-      </footer>
-    <!-- Footer End -->
+        <span class="inline-flex lg:ml-auto lg:mt-0 mt-6 w-full justify-center md:justify-start md:w-auto">
+          <a class="text-gray-600">
+            <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5"
+              viewBox="0 0 24 24">
+              <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+            </svg>
+          </a>
+          <a class="ml-3 text-gray-600">
+            <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5"
+              viewBox="0 0 24 24">
+              <path
+                d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z">
+              </path>
+            </svg>
+          </a>
+          <a class="ml-3 text-gray-600">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              class="w-5 h-5" viewBox="0 0 24 24">
+              <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+              <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+            </svg>
+          </a>
+          <a class="ml-3 text-gray-600">
+            <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+              stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+              <path stroke="none"
+                d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+              <circle cx="4" cy="4" r="2" stroke="none"></circle>
+            </svg>
+          </a>
+        </span>
+      </div>
+    </div>
+    <div class="bg-gray-800">
+      <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
+        <p class="text-gray-600 text-sm text-center sm:text-left">© 2020 tailblocks —
+          <a href="https://twitter.com/knyttneve" class="text-gray-500 ml-1" target="_blank"
+            rel="noopener noreferrer">@knyttneve</a>
+        </p>
+        <span class="sm:ml-auto sm:mt-0 mt-2 sm:w-auto w-full sm:text-left text-center text-gray-600 text-sm">Enamel pin
+          tousled raclette tacos irony</span>
+      </div>
+    </div>
+  </footer>
+  <!-- Footer End -->
 </body>
+<script src="script.js"></script>
+
 </html>
