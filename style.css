@@ -3,7 +3,7 @@
     src: url(Monoton-Regular.ttf);
   }
   .logo{
-    font-family: 'Monoton', cursive;
+    font-family: 'Monoton', cursive !important;
     background: -webkit-linear-gradient(0deg,#ff8A00, #e52e71);
     background-clip: text;
     -webkit-background-clip: text;
@@ -11,19 +11,16 @@
     -webkit-text-fill-color: transparent;
 
   }
-
   @media only screen and (min-width:768px){
   .glowLogo{
       padding: 20px 300px 30px 20px;
   }
-
   .glowLogo:hover{
     border-radius: 50px;
     animation: glow;
     animation-duration: 0.5s;
     animation-direction: alternate;
     animation-iteration-count: infinite;
-    /* background: -webkit-linear-gradient(0deg,rgba(255, 136, 0, 0.438), #e52e7157); */
     filter:blur(10px);
   }
   @keyframes glow {
@@ -35,8 +32,23 @@
     
   }
 }
-
-
 .registerButton {
   background-image: linear-gradient(90deg,#ff8A00, #e52e71);
+}
+
+html::-webkit-scrollbar {
+  width: 20px;
+  height: 30px;
+}
+html::-webkit-scrollbar-thumb {
+  background: linear-gradient(155deg,#ff8a00,#e52e71);
+  border-radius: 30px;
+  box-shadow: inset 2px 2px 2px hsla(0,0%,100%,.25), inset -2px -2px 2px rgba(0,0,0,.25);
+}
+html::-webkit-scrollbar-track {
+  background: linear-gradient(90deg,#201c29,#201c29 1px,#100e17 0,#100e17);
+}
+#backToTop{
+  bottom: 20px; 
+  right: 20px;
 }
