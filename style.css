@@ -90,3 +90,6 @@ html::-webkit-scrollbar-track {
 .navIcon:focus{
   fill:#e52e71;
 }
+.hero{
+  background: linear-gradient(30deg,#f7c626 15%,#f68c2f 40%,#e5127d 85%);
+}
