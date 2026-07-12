@@ -1,13 +1,251 @@
-<!doctype html>
-
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-
-  <title>Suyash Kelvin Savant</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Suyash Kelvin Savant — Full-Stack Engineer</title>
+  <meta name="description" content="Suyash Kelvin Savant — Full-Stack Engineer building tools that make large codebases legible. Open-source voice/TTS tinkerer, toolmaker for developers." />
+  <meta name="author" content="Suyash Kelvin Savant" />
+  <meta property="og:title" content="Suyash Kelvin Savant — Full-Stack Engineer" />
+  <meta property="og:description" content="Toolmaker for developers · Open-source voice/TTS tinkerer" />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://api.fontshare.com" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://api.fontshare.com/v2/css?f[]=clash-display@600,700,500&f[]=satoshi@400,500,700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
 </head>
-
 <body>
-<h1>Coming Soon... Great Stuff</h1>
+  <!-- Custom cursor -->
+  <div class="cursor" data-cursor><span class="cursor__label" data-cursor-label></span></div>
+  <div class="cursor-dot" data-cursor-dot></div>
+
+  <!-- Preloader -->
+  <div class="preloader" data-preloader>
+    <div class="preloader__num mono" data-count>00</div>
+    <div class="preloader__name">Suyash Kelvin Savant</div>
+    <div class="preloader__bar"><span data-preloader-bar></span></div>
+    <div class="preloader__tag mono">crafting portfolio — please wait</div>
+  </div>
+
+  <!-- Texture overlays -->
+  <div class="grain" aria-hidden="true"></div>
+  <div class="vignette" aria-hidden="true"></div>
+
+  <!-- Scroll progress -->
+  <div class="progress" aria-hidden="true"><span data-progress></span></div>
+
+  <!-- Nav -->
+  <header class="nav" data-nav>
+    <a href="#hero" class="nav__brand mono" data-magnetic data-cursor-text="home">kelvin<span class="dot">.</span>dev</a>
+    <nav class="nav__links">
+      <a href="#about" data-link data-cursor-text="view">about</a>
+      <a href="#work" data-link data-cursor-text="view">work</a>
+      <a href="#stack" data-link data-cursor-text="view">stack</a>
+      <a href="#now" data-link data-cursor-text="view">now</a>
+    </nav>
+    <a href="https://www.linkedin.com/in/suyashkelvin" target="_blank" rel="noopener" class="nav__cta" data-magnetic data-cursor-text="say hi">let's talk ↗</a>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="hero">
+      <div class="hero__mesh" aria-hidden="true">
+        <span class="blob b1" data-float></span>
+        <span class="blob b2" data-float></span>
+        <span class="blob b3" data-float></span>
+        <span class="grid-lines"></span>
+      </div>
+      <div class="wrap hero__inner">
+        <div class="hero__top">
+          <div class="hero__left">
+            <p class="hero__eyebrow mono" data-reveal>// full-stack engineer · toolmaker for devs</p>
+            <span class="status" data-reveal><span class="status__dot"></span> available for new work</span>
+          </div>
+          <p class="hero__clock mono" data-clock>--:--:--</p>
+        </div>
+        <h1 class="hero__title">
+          <span class="line"><span class="words" data-words>I build tools that make</span></span>
+          <span class="line"><span class="words" data-words>big codebases <em>legible</em>.</span></span>
+        </h1>
+        <div class="hero__foot">
+          <div class="hero__intro-left">
+            <p class="hero__sub" data-reveal>I'm <strong>Kelvin</strong> — Suyash Kelvin Savant. I help new developers read &amp; understand large repositories fast, and tinker with open-source voice / TTS.</p>
+            <a href="#work" data-link class="hero__scroll mono" data-cursor-text="explore">
+              <span class="hero__scroll-line"></span> scroll to explore
+            </a>
+          </div>
+          <figure class="hero__portrait" data-reveal data-float-soft>
+            <span class="hero__portrait-ring"></span>
+            <img src="assets/img/avatar.jpg" alt="Suyash Kelvin Savant" loading="eager" />
+            <figcaption class="mono">@suyashkelvinsavant</figcaption>
+          </figure>
+        </div>
+      </div>
+      <div class="hero__edge mono" aria-hidden="true">scroll ↓</div>
+    </section>
+
+    <!-- MARQUEE -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track" data-marquee>
+        <span>TypeScript</span><span class="star">✳</span><span>Flutter</span><span class="star">✳</span><span>Next.js</span><span class="star">✳</span><span>Rust</span><span class="star">✳</span><span>Python</span><span class="star">✳</span><span>Astro</span><span class="star">✳</span><span>React</span><span class="star">✳</span><span>Linux</span><span class="star">✳</span><span>Voice&nbsp;AI</span><span class="star">✳</span>
+        <span>TypeScript</span><span class="star">✳</span><span>Flutter</span><span class="star">✳</span><span>Next.js</span><span class="star">✳</span><span>Rust</span><span class="star">✳</span><span>Python</span><span class="star">✳</span><span>Astro</span><span class="star">✳</span><span>React</span><span class="star">✳</span><span>Linux</span><span class="star">✳</span><span>Voice&nbsp;AI</span><span class="star">✳</span>
+      </div>
+    </div>
+
+    <!-- ABOUT -->
+    <section class="about" id="about">
+      <div class="wrap about__grid">
+        <div class="about__label mono" data-reveal>(01) — about</div>
+        <div class="about__body">
+          <p class="about__lead" data-reveal>My driving obsession: <mark>making scary codebases legible to newcomers.</mark> I build comprehension tooling — client-side, nothing leaves the browser — so the next developer who joins a repo isn't lost for a week.</p>
+          <ul class="about__list">
+            <li data-reveal><span class="about__ico">🎙️</span> Experimenting with <b>open-source / free TTS &amp; voice AI</b></li>
+            <li data-reveal><span class="about__ico">⚡</span> Building <b>Flutter</b> apps on the side</li>
+            <li data-reveal><span class="about__ico">📚</span> Saving good guides as <code>.md</code> files I'll actually re-read</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- WORK (horizontal pinned) -->
+    <section class="work" id="work">
+      <div class="work__pin" data-pin>
+        <div class="work__track" data-track>
+          <div class="work__intro">
+            <div class="about__label mono">(02) — what i'm building</div>
+            <h2 class="work__title">Selected <em>work</em></h2>
+            <p class="work__hint mono">drag / scroll →</p>
+          </div>
+          <article class="pcard" data-tilt data-cursor-text="open">
+            <span class="pcard__aurora" aria-hidden="true"></span>
+            <div class="pcard__top"><span class="pcard__num mono">01</span><span class="pcard__tag mono">Rust · Protocol</span></div>
+            <h3 class="pcard__title">AutoRouter</h3>
+            <p class="pcard__desc">The AI provider protocol — routing &amp; orchestration for LLM traffic. Built in Rust, designed for resilience at scale.</p>
+            <div class="pcard__foot"><span class="mono">↗ github.com/suyashkelvinsavant/autorouter</span></div>
+            <a class="pcard__link" href="https://github.com/suyashkelvinsavant/autorouter" target="_blank" rel="noopener" aria-label="AutoRouter"></a>
+            <span class="pcard__glow" aria-hidden="true"></span>
+          </article>
+          <article class="pcard" data-tilt data-cursor-text="open">
+            <span class="pcard__aurora" aria-hidden="true"></span>
+            <div class="pcard__top"><span class="pcard__num mono">02</span><span class="pcard__tag mono">Product · Web</span></div>
+            <h3 class="pcard__title">Dayvise.com</h3>
+            <p class="pcard__desc">An app to help people connect in the AGI world — building calmer, more intentional ways to meet.</p>
+            <div class="pcard__foot"><span class="mono">↗ dayvise.com</span></div>
+            <a class="pcard__link" href="https://dayvise.com" target="_blank" rel="noopener" aria-label="Dayvise"></a>
+            <span class="pcard__glow" aria-hidden="true"></span>
+          </article>
+          <article class="pcard pcard--blank">
+            <span class="pcard__aurora" aria-hidden="true"></span>
+            <div class="pcard__top"><span class="pcard__num mono">03</span></div>
+            <h3 class="pcard__title">More soon.</h3>
+            <p class="pcard__desc">"Don't stop until told." New things ship constantly — this slot fills itself.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+    <div class="work__float" data-float-panel aria-hidden="true"><div class="wf-inner"><span data-float-label>↗</span></div></div>
+
+    <!-- STACK -->
+    <section class="stack" id="stack">
+      <div class="wrap stack__grid">
+        <div class="about__label mono" data-reveal>(03) — tech stack</div>
+        <div class="stack__tags">
+          <span class="tag" data-reveal>TypeScript</span>
+          <span class="tag" data-reveal>JavaScript</span>
+          <span class="tag" data-reveal>Python</span>
+          <span class="tag" data-reveal>Dart</span>
+          <span class="tag" data-reveal>Flutter</span>
+          <span class="tag" data-reveal>React</span>
+          <span class="tag" data-reveal>Next.js</span>
+          <span class="tag" data-reveal>Node.js</span>
+          <span class="tag" data-reveal>Linux</span>
+          <span class="tag" data-reveal>Raspberry Pi</span>
+          <span class="tag" data-reveal>PostgreSQL</span>
+          <span class="tag" data-reveal>PL/SQL</span>
+          <span class="tag" data-reveal>.NET</span>
+          <span class="tag" data-reveal>C#</span>
+          <span class="tag" data-reveal>Unity</span>
+          <span class="tag" data-reveal>Azure</span>
+          <span class="tag" data-reveal>Google Cloud</span>
+          <span class="tag" data-reveal>Firebase</span>
+          <span class="tag" data-reveal>Astro</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- NOW -->
+    <section class="now" id="now">
+      <div class="wrap now__grid">
+        <div class="about__label mono" data-reveal>(04) — currently</div>
+        <ul class="now__list">
+          <li data-reveal><span class="now__idx mono">→</span> Deepening the AutoRouter protocol</li>
+          <li data-reveal><span class="now__idx mono">→</span> Hunting the best <b>free / open-source TTS</b> pipelines</li>
+          <li data-reveal><span class="now__idx mono">→</span> Wiring more of my life through <b>Raspberry Pi</b> automation</li>
+          <li data-reveal><span class="now__idx mono">→</span> Studying references <i>before</i> I code — slow is smooth, smooth is fast</li>
+        </ul>
+        <div class="now__clockwrap">
+          <div class="now__clock mono" data-clock>--:--:--</div>
+          <div class="now__clocklabel mono">local time · India</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- STATEMENT (outline marquee) -->
+    <div class="statement" aria-hidden="true">
+      <div class="statement__track" data-marquee-rev>
+        <span>don't stop until told</span><span class="x">✕</span><span>toolmaker for devs</span><span class="x">✕</span><span>open-source voice ai</span><span class="x">✕</span><span>make code legible</span><span class="x">✕</span>
+        <span>don't stop until told</span><span class="x">✕</span><span>toolmaker for devs</span><span class="x">✕</span><span>open-source voice ai</span><span class="x">✕</span><span>make code legible</span><span class="x">✕</span>
+      </div>
+    </div>
+
+    <!-- STATS -->
+    <section class="stats" id="stats">
+      <div class="wrap stats__grid">
+        <div class="stat" data-reveal>
+          <div class="stat__num" data-countup data-to="2" data-suffix="+">0</div>
+          <div class="stat__label">Years shipping</div>
+        </div>
+        <div class="stat" data-reveal>
+          <div class="stat__num" data-countup data-to="8" data-suffix="+">0</div>
+          <div class="stat__label">Projects shipped</div>
+        </div>
+        <div class="stat" data-reveal>
+          <div class="stat__num" data-countup data-to="20" data-suffix="">0</div>
+          <div class="stat__label">Techs mastered</div>
+        </div>
+        <div class="stat" data-reveal>
+          <div class="stat__num" data-countup data-to="100" data-suffix="%">0</div>
+          <div class="stat__label">Client-side, private</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta">
+      <div class="wrap cta__inner">
+        <h2 class="cta__title"><span data-words>Let's build something</span> <em data-words>legible.</em></h2>
+        <div class="cta__links">
+          <a href="https://www.linkedin.com/in/suyashkelvin" target="_blank" rel="noopener" class="cta__btn" data-magnetic data-cursor-text="open">LinkedIn ↗</a>
+          <a href="https://x.com/SuyashKelvin" target="_blank" rel="noopener" class="cta__btn" data-magnetic data-cursor-text="open">X / Twitter ↗</a>
+          <a href="https://suyashsavant.com" target="_blank" rel="noopener" class="cta__btn" data-magnetic data-cursor-text="open">Website ↗</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer__inner">
+      <div class="footer__quote mono">⚡ "Don't stop until told."</div>
+      <div class="footer__meta mono">© <span data-year></span> Suyash Kelvin Savant · crafted with GSAP + Lenis</div>
+    </div>
+  </footer>
+
+  <!-- Libraries -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+  <script src="assets/js/main.js"></script>
 </body>
 </html>
