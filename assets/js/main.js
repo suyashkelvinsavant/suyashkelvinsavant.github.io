@@ -55,6 +55,7 @@
     setupHeroParallax();
     setupFloatPreview();
     setupCountUp();
+    setupMobileNav();
     // recalc positions after pin + fonts settle
     requestAnimationFrame(() => ScrollTrigger.refresh());
     if (document.fonts && document.fonts.ready) document.fonts.ready.then(() => ScrollTrigger.refresh());
@@ -309,6 +310,20 @@
         }
       });
     });
+  }
+
+  /* ---------- Mobile nav ---------- */
+  function setupMobileNav() {
+    const burger = $("[data-burger]"), panel = $("[data-mobile]");
+    if (!burger || !panel) return;
+    const toggle = (open) => {
+      burger.classList.toggle("is-open", open);
+      panel.classList.toggle("is-open", open);
+      document.body.style.overflow = open ? "hidden" : "";
+    };
+    burger.addEventListener("click", () => toggle(!burger.classList.contains("is-open")));
+    $$("[data-mobile] a").forEach((a) => a.addEventListener("click", () => toggle(false)));
+    addEventListener("resize", () => { if (innerWidth > 680) toggle(false); });
   }
 
   const yr = $("[data-year]");
